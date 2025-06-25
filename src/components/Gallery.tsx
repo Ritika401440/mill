@@ -3,22 +3,22 @@ import React from 'react';
 const Gallery = () => {
   const images = [
     {
-      src: "mill/images/photo1.jpeg",
+      src: `${import.meta.env.BASE_URL}images/photo1.jpeg`,
       alt: "Rice processing facility exterior",
       title: "Modern Processing Facility"
     },
     {
-      src: "mill/images/photo2.jpeg",
+      src: `${import.meta.env.BASE_URL}images/photo2.jpeg`,
       alt: "Rice processing machinery",
       title: "Advanced Machinery"
     },
     {
-      src: "mill/images/photo3.jpeg",
+      src: `${import.meta.env.BASE_URL}images/photo3.jpeg`,
       alt: "Rice processing equipment",
       title: "Quality Processing Equipment"
     },
     {
-      src: "mill/images/photo-gallery.jpeg",
+      src: `${import.meta.env.BASE_URL}images/photo-gallery.jpeg`,
       alt: "Rice fields and facility",
       title: "Our Operations"
     }
