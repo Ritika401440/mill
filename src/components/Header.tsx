@@ -31,7 +31,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <img 
-              src={`${import.meta.env.BASE_URL}logo, shakti rice.png`} 
+              src={`${import.meta.env.BASE_URL}logo-shakti-rice.png`} 
               alt="Shakti Rice Mill" 
               className="h-16 w-auto"
             />
