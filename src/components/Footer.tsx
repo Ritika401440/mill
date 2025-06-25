@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <img 
-              src="/logo, shakti rice.png" 
+              src={`${import.meta.env.BASE_URL}logo, shakti rice.png`} 
               alt="Shakti Rice Mill" 
               className="h-16 w-auto mb-6 filter brightness-0 invert"
             />
