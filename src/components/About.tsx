@@ -55,7 +55,7 @@ const About = () => {
 
           <div className="relative">
             <img 
-              src="/images/photo1.jpeg" 
+              src={`${import.meta.env.BASE_URL}images/photo1.jpeg`} 
               alt="Rice processing facility" 
               className="rounded-lg shadow-2xl w-full h-96 object-cover"
             />
