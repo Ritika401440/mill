@@ -6,12 +6,14 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Products from './components/Products';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <Products />
       <About />
       <Services />
       <Gallery />
