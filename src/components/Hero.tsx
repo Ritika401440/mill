@@ -4,52 +4,52 @@ import { ArrowRight, Award, Users, Factory, X } from 'lucide-react';
 const products = [
   {
     name: 'IR64 WHITE 5%',
-    image: '/images/photo1.jpeg',
+    image: '/mill/product_images/product_image_1.jpeg',
     description: 'High-quality IR64 rice with 5% broken grains. Known for its long grain, affordability, and suitability for daily meals and export.'
   },
   {
     name: 'IR64 WHITE 25%',
-    image: '/images/photo2.jpeg',
+    image: '/mill/product_images/product_image_2.jpeg',
     description: 'IR64 rice with 25% broken grains. Economical and ideal for bulk use in food service, hotels, and catering.'
   },
   {
     name: 'Swarna white 5%',
-    image: '/images/photo3.jpeg',
+    image: '/mill/product_images/product_image_3.jpeg',
     description: 'Premium Swarna rice with only 5% broken. Popular for its taste, texture, and nutritional value.'
   },
   {
     name: 'Swarna 25%',
-    image: '/images/photo-gallery.jpeg',
+    image: '/mill/product_images/product_image_4.jpeg',
     description: 'Swarna rice with 25% broken grains. Cost-effective and widely used in institutional kitchens.'
   },
   {
     name: 'Broken white 100%',
-    image: '/images/photo1.jpeg',
+    image: '/mill/product_images/product_image_1.jpeg',
     description: '100% broken white rice. Used for rice flour, snacks, brewing, and animal feed.'
   },
   {
     name: 'Sona masoori steam',
-    image: '/images/photo2.jpeg',
+    image: '/mill/product_images/product_image_2.jpeg',
     description: 'Steamed Sona Masoori rice. Lightweight, aromatic, and perfect for South Indian cuisine.'
   },
   {
     name: 'PR 26 White 5%',
-    image: '/images/photo3.jpeg',
+    image: '/mill/product_images/product_image_3.jpeg',
     description: 'PR 26 variety with 5% broken. Soft texture, ideal for daily meals and export.'
   },
   {
     name: 'PR 26 steam 5%',
-    image: '/images/photo-gallery.jpeg',
+    image: '/mill/product_images/product_image_4.jpeg',
     description: 'Steamed PR 26 rice with 5% broken. Retains nutrients and flavor, suitable for a variety of dishes.'
   },
   {
     name: 'Mota (common) 5%',
-    image: '/images/photo1.jpeg',
+    image: '/mill/product_images/product_image_2.jpeg',
     description: 'Mota rice with 5% broken. Commonly used in local cuisines for its filling nature.'
   },
   {
     name: 'Sona masoori white 5%',
-    image: '/images/photo2.jpeg',
+    image: '/mill/product_images/product_image_1.jpeg',
     description: 'White Sona Masoori rice with 5% broken. Soft, fluffy, and aromatic, perfect for daily use.'
   },
 ];
