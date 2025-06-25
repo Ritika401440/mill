@@ -1,7 +1,62 @@
-import React from 'react';
-import { ArrowRight, Award, Users, Factory } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowRight, Award, Users, Factory, X } from 'lucide-react';
+
+const products = [
+  {
+    name: 'IR64 WHITE 5%',
+    image: '/images/photo1.jpeg',
+    description: 'High-quality IR64 rice with 5% broken grains. Known for its long grain, affordability, and suitability for daily meals and export.'
+  },
+  {
+    name: 'IR64 WHITE 25%',
+    image: '/images/photo2.jpeg',
+    description: 'IR64 rice with 25% broken grains. Economical and ideal for bulk use in food service, hotels, and catering.'
+  },
+  {
+    name: 'Swarna white 5%',
+    image: '/images/photo3.jpeg',
+    description: 'Premium Swarna rice with only 5% broken. Popular for its taste, texture, and nutritional value.'
+  },
+  {
+    name: 'Swarna 25%',
+    image: '/images/photo-gallery.jpeg',
+    description: 'Swarna rice with 25% broken grains. Cost-effective and widely used in institutional kitchens.'
+  },
+  {
+    name: 'Broken white 100%',
+    image: '/images/photo1.jpeg',
+    description: '100% broken white rice. Used for rice flour, snacks, brewing, and animal feed.'
+  },
+  {
+    name: 'Sona masoori steam',
+    image: '/images/photo2.jpeg',
+    description: 'Steamed Sona Masoori rice. Lightweight, aromatic, and perfect for South Indian cuisine.'
+  },
+  {
+    name: 'PR 26 White 5%',
+    image: '/images/photo3.jpeg',
+    description: 'PR 26 variety with 5% broken. Soft texture, ideal for daily meals and export.'
+  },
+  {
+    name: 'PR 26 steam 5%',
+    image: '/images/photo-gallery.jpeg',
+    description: 'Steamed PR 26 rice with 5% broken. Retains nutrients and flavor, suitable for a variety of dishes.'
+  },
+  {
+    name: 'Mota (common) 5%',
+    image: '/images/photo1.jpeg',
+    description: 'Mota rice with 5% broken. Commonly used in local cuisines for its filling nature.'
+  },
+  {
+    name: 'Sona masoori white 5%',
+    image: '/images/photo2.jpeg',
+    description: 'White Sona Masoori rice with 5% broken. Soft, fluffy, and aromatic, perfect for daily use.'
+  },
+];
 
 const Hero = () => {
+  const [showProducts, setShowProducts] = useState(false);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center">
       {/* Background image */}
@@ -26,7 +81,10 @@ const Hero = () => {
             Committed to excellence since our establishment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+            <button
+              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+              onClick={() => setShowProducts(true)}
+            >
               Explore Our Products
               <ArrowRight className="ml-2" size={20} />
             </button>
@@ -55,6 +113,31 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Products Modal */}
+      {showProducts && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+          <div className="bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-8 relative">
+            <button
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
+              onClick={() => setShowProducts(false)}
+              aria-label="Close"
+            >
+              <X size={28} />
+            </button>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Rice Products</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {products.map((product, idx) => (
+                <div key={idx} className="bg-gray-50 rounded-lg shadow p-4 flex flex-col items-center">
+                  <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded mb-4" />
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{product.name}</h3>
+                  <p className="text-gray-700 text-center">{product.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
